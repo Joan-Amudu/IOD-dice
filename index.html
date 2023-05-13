@@ -9,11 +9,22 @@
 <body>
     <h1>devsInc Dice Generator</h1>
     <section>
-        <input type="radio">
-        <label for="">D6</label>
-        <input type="radio">
-        <label for="">D10</label>
-        <button>Roll Dice</button>
+       <!--6 face Dice-->
+        <label style="color: blue;">D6</label>        
+        <button onclick="dSix()">Roll Dice</button><br><br>
+        <!--10 face Dice-->
+        <label style="color: green;">D10</label>        
+        <button onclick="dTen()">Roll Dice</button>
     </section>
 </body>
+<script>
+    function dSix() {
+   alert(Math.floor(Math.random() * 6) + 1);
+    
+}
+function dTen() {
+   alert(Math.floor(Math.random() * 10) + 1);
+    
+}
+</script>
 </html>
